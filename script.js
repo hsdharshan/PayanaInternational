@@ -1,9 +1,5 @@
 // script.js
 
-function showMessage() {
-    document.getElementById('message').innerText = 'Hello, you clicked the button!';
-}
-
 document.querySelector('form').addEventListener('submit', function(event) {
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
