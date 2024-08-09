@@ -1,20 +1,57 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Calibri', sans-serif;
+    background-color: #c7bfda; /* Example background color */
+    color: #333; /* Default text color */
     margin: 0;
     padding: 0;
 }
 
 header {
     background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    background-image: url('images/Web Images/cover image.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Text color */
+    padding: 20px; /* Padding inside the header */
+    text-align: center; /* Center-align text */
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    background-color: transparent; /* Fully transparent background for the nav bar */
+}
+
+/* Navigation links styling */
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-size: 16px; /* Adjust font size as needed */
+    font-family: Calibri, sans-serif;
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Padding inside each link */
+    background-color: rgba(255, 255, 255, 0.0); /* Fully transparent background for each link */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Slightly less transparent on hover */
+    color: black; /* Change text color on hover */
 }
 
 nav {
-    background-color: #444;
+    background-color: rgba(255, 255, 255, 0.0);
     padding: 10px;
 }
 
@@ -69,7 +106,7 @@ form button {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgb(32, 31, 31);
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -90,3 +127,55 @@ footer {
         margin: 5px 0;
     }
 }
+
+/* Optional: Add padding to the content */
+.container {
+    padding: 20px;
+}
+
+/* Styling for headers and links */
+h1, h2, h3, h4, h5, h6 {
+    color: #333; /* Text color for headers */
+}
+
+a {
+    color: #0066cc; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Set font sizes for different text elements */
+p, li, span {
+    font-size: 16px; /* Normal text */
+}
+
+h1 {
+    font-size: 22px; /* Title */
+}
+
+h2 {
+    font-size: 20px; /* Heading */
+}
+
+h3 {
+    font-size: 18px; /* Subheading */
+}
+
+/* Optional: Add padding to the content for better spacing */
+.container {
+    padding: 20px;
+}
+
+/* Styling for links */
+a {
+    color: #0066cc; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
