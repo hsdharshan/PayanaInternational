@@ -9,3 +9,12 @@ document.querySelector('form').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menu = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('nav ul');
+
+    menu.addEventListener('click', function () {
+        nav.classList.toggle('active');
+    });
+});

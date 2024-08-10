@@ -10,7 +10,7 @@ body {
 
 header {
     background-color: #333;
-    background-image: url('images/Web Images/cover image.jpg'); /* Path to your image */
+    background-image: url('../images/Web Images/cover image.jpg'); /* Path to your image */
     background-size: cover; /* Ensures the image covers the entire header */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -179,3 +179,95 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Base styles (for desktop) */
+body {
+    font-family: Calibri, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Style headings */
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p, li {
+    font-size: 12px;
+}
+
+/* Mobile styles (for screens smaller than 768px) */
+@media (max-width: 768px) {
+    /* Adjust fonts */
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p, li {
+        font-size: 12px;
+    }
+
+    /* Adjust the layout */
+    .container {
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* Example: Hamburger Menu */
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul.active {
+        display: flex;
+        background-color: #333;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        padding: 10px;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+/* Hamburger menu default hidden on desktop */
+.hamburger-menu {
+    display: none;
+}
+
+/* Example of a transparent background for navigation links */
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
