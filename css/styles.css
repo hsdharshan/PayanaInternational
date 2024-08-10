@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #b67e7e;
     background-image: url('../images/Web Images/cover image.jpg'); /* Path to your image */
     background-size: cover; /* Ensures the image covers the entire header */
     background-position: center; /* Center the image */
@@ -67,7 +67,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #0f0f0f;
     text-decoration: none;
 }
 
@@ -242,7 +242,7 @@ p, li {
 
     nav ul.active {
         display: flex;
-        background-color: #333;
+        background-color: #e5a0a0;
         position: absolute;
         width: 100%;
         top: 50px;
@@ -256,18 +256,94 @@ p, li {
     }
 }
 
-/* Hamburger menu default hidden on desktop */
+/* Navigation and hamburger menu */
 .hamburger-menu {
     display: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-/* Example of a transparent background for navigation links */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px 0;
+}
+
 nav ul li a {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
 }
 
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #333;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    padding: 10px 0;
+}
+
+nav ul li {
+    background-color: transparent; /* Ensure the list items themselves are transparent */
+}
+
+nav ul li a {
+    color: white; /* Text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: transparent; /* Transparent background for links */
+}
+
+/* Hover effect */
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly opaque hover effect */
+    color: #000; /* Change text color on hover */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+    }
 }
