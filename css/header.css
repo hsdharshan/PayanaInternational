@@ -1,0 +1,113 @@
+/* Header and Navigation Styles */
+header {
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+}
+
+nav {
+    position: relative; /* Required for the hamburger menu */
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Navigation Links */
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgba(87, 87, 87, 0.8);
+}
+
+/* Dropdown Menu Styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for dropdown */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Responsive Design for Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide navigation menu by default */
+        flex-direction: column;
+        width: 100%;
+        background: rgba(51, 51, 51, 0.8); /* Ensure background is visible */
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 14px;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        min-width: 100%;
+    }
+
+    .dropdown-content a {
+        padding-left: 30px;
+    }
+}
