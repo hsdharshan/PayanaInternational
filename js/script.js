@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Determine the relative path for header and footer based on the current file's directory depth
         const relativePath = path.includes('fixed-international') || path.includes('fixed-india') ? '../' : '';
 
-        loadHTML('header', `${relativePath}header.html`);
-        loadHTML('footer', `${relativePath}footer.html`);
+        loadHTML('header', '/header.html');  // Root-relative path
+        loadHTML('footer', '/footer.html');  // Root-relative path
     }
 
     // Attach event listener for the menu toggle button
